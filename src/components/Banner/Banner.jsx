@@ -2,7 +2,7 @@
 /* eslint-disable no-undef */
 import { useEffect, useState } from "react";
 import './Banner.css'
-import {BiPlus} from 'react-icons/bi'
+import { BiPlus } from 'react-icons/bi'
 
 const Banner = () => {
 
@@ -43,25 +43,29 @@ const Banner = () => {
 
 
     return (
-        <div className="hero min-h-screen flex w-full dark:bg-black">
+        <div className="dark:bg-black pb-10">
+            <div className="hero min-h-screen flex w-full dark:bg-black">
 
-            <div className="w-6/12 text-center">
-                <h1 className="mb-5 text-5xl font-bold dark:text-yellow-300">Hi, It's Sayeed, <br /> {text}</h1>
-            </div>
-
-            <div className="h-80 w-44 rounded-full relative">
-                <div className="absolute top-10 left-6 z-10 h-full w-full rounded-full overflow-hidden">
-                    <img className="w-full h-full object-cover" src="https://i.ibb.co/YN8H6Jd/IMG-1044.jpg" alt="" />
+                <div className="w-6/12 text-center">
+                    <h1 className="mb-5 text-5xl font-bold dark:text-yellow-300">Hi, It's Sayeed, <br /> {text}</h1>
                 </div>
-                <div className="absolute top-20 left-40 z-30 rounded-2xl w-60 bg-blue-50 dark:bg-gray-700 dark:text-yellow-500 pr-10 pl-4 py-4 flex gap-4 font-bold"><BiPlus className=" mt-1"></BiPlus><span>Attention To-Detail</span></div>
-                <div className="absolute top-40 left-40 z-30 rounded-2xl w-60 bg-blue-50 dark:bg-gray-700 dark:text-yellow-500 pr-10 pl-4 py-4 flex gap-4 font-bold"><BiPlus className=" mt-1"></BiPlus><span>Attention To-Detail</span></div>
-                <div className="absolute top-60 left-40 z-30 rounded-2xl w-60 bg-blue-50 dark:bg-gray-700 dark:text-yellow-500 pr-10 pl-4 py-4 flex gap-4 font-bold"><BiPlus className=" mt-1"></BiPlus><span>Attention To-Detail</span></div>
-               
-                
-                <div className="absolute top-2 left-2 z-20 h-96 w-44 rounded-full border-8 border-white dark:border-black  border-transparent"></div>
+
+                <div className="h-80 w-44 rounded-full relative">
+                    <div className="absolute top-10 left-6 z-10 h-full w-full rounded-full overflow-hidden">
+                        <img className="w-full h-full object-cover" src="https://i.ibb.co/YN8H6Jd/IMG-1044.jpg" alt="" />
+                    </div>
+                    <div className="absolute top-20 left-40 z-30 rounded-2xl w-60 bg-blue-50 dark:bg-gray-700 dark:text-yellow-500 pr-10 pl-4 py-4 flex gap-4 font-bold"><BiPlus className=" mt-1"></BiPlus><span>Attention To-Detail</span></div>
+                    <div className="absolute top-40 left-40 z-30 rounded-2xl w-60 bg-blue-50 dark:bg-gray-700 dark:text-yellow-500 pr-10 pl-4 py-4 flex gap-4 font-bold"><BiPlus className=" mt-1"></BiPlus><span>Attention To-Detail</span></div>
+                    <div className="absolute top-60 left-40 z-30 rounded-2xl w-60 bg-blue-50 dark:bg-gray-700 dark:text-yellow-500 pr-10 pl-4 py-4 flex gap-4 font-bold"><BiPlus className=" mt-1"></BiPlus><span>Attention To-Detail</span></div>
+                    <div className="absolute top-2 left-2 z-20 h-96 w-44 rounded-full border-8 border-white dark:border-black  border-transparent"></div>
+                </div>
             </div>
-
-
+            <div className="flex justify-center items-center space-x-10">
+                <img className="w-48" src="https://i.ibb.co/M1frk1Y/mongo.png" alt="" />
+                <img className="w-48" src="https://i.ibb.co/LhVHHLB/express.png" alt="" />
+                <img className="w-48 animate-spin-slow" src="https://i.ibb.co/c8t2WJK/react.png" alt="" />
+                <img className="w-48" src="https://i.ibb.co/Dbh6b41/node.png" alt="" />
+            </div>
 
         </div>
     );
