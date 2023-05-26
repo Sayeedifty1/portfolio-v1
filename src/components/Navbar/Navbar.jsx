@@ -11,10 +11,16 @@ const Navbar = () => {
             document.documentElement.classList.remove("dark");
         }
     }, [theme]);
+   
     const handleTheme = () => {
         if(theme==="dark"){
+                 //TODO: set theme to local storage so in reload it will not change
+            localStorage.setItem("theme", "light");
             setTheme("light");
+
         }else{
+           //TODO:  set dark theme to local storage
+            localStorage.setItem("theme", "dark");
             setTheme("dark");
         }
     };
@@ -34,7 +40,7 @@ const links = <>
 </>
 
     return (
-        <div className="navbar fixed z-10 bg-opacity-80 text-white bg-black dark:bg-white dark:text-black">
+        <div className="navbar fixed z-10 bg-opacity-80 text-white bg-black dark:text-yellow-500  dark:opacity-60 dark:text-opacity-100">
             <div className="navbar-start">
                 <div className="dropdown">
                     
