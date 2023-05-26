@@ -1,6 +1,23 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+    const [theme, setTheme] = useState("light");
+
+    useEffect(() => {
+        if(theme==="dark"){
+            document.documentElement.classList.add("dark");
+        }else{
+            document.documentElement.classList.remove("dark");
+        }
+    }, [theme]);
+    const handleTheme = () => {
+        if(theme==="dark"){
+            setTheme("light");
+        }else{
+            setTheme("dark");
+        }
+    };
 
     const NavOptions = <>
         <li><Link to="/">Home</Link></li>
@@ -12,12 +29,12 @@ const Navbar = () => {
 const links = <>
 <li className="mr-4">Linkedin</li>
 <li className="mr-4">GitHub</li>
-<li>Dark-light</li>
+<li><input onClick={handleTheme} type="checkbox" className="toggle toggle-lg" /></li>
 
 </>
 
     return (
-        <div className="navbar fixed z-10 bg-opacity-30 bg-base-100">
+        <div className="navbar fixed z-10 bg-opacity-80 text-white bg-black dark:bg-white dark:text-black">
             <div className="navbar-start">
                 <div className="dropdown">
                     
