@@ -49,6 +49,7 @@ const Banner = () => {
 
                 <div className="w-6/12 text-center">
                     <h1 className="mb-5 text-5xl font-bold dark:text-yellow-300">Hi, It's Sayeed, <br /> {text}</h1>
+                    {/* <h1 className="mb-5 text-2xl font-bold dark:text-yellow-300">Contact : +8801882021206 , md.abusayeedifty@gmail.com</h1> */}
                 </div>
                 <Social></Social>
 
