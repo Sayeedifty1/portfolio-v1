@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import './Banner.css'
 import { BiPlus } from 'react-icons/bi';
+import Social from "../Social/Social";
 
 const Banner = () => {
 
@@ -49,6 +50,7 @@ const Banner = () => {
                 <div className="w-6/12 text-center">
                     <h1 className="mb-5 text-5xl font-bold dark:text-yellow-300">Hi, It's Sayeed, <br /> {text}</h1>
                 </div>
+                <Social></Social>
 
                 <div className="h-80 w-44 rounded-full relative">
                     <div className="absolute top-10 left-6 z-10 h-full w-full rounded-full overflow-hidden">
