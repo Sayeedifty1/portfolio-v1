@@ -1,0 +1,68 @@
+[
+      {
+        "name": "HTML",
+        "picture": "https://i.ibb.co/3stWtXy/html5-logo-31813.png",
+        "score": 90
+      },
+      {
+        "name": "CSS",
+        "picture": "https://i.ibb.co/7rXJ6Zt/pngegg.png",
+        "score": 85
+      },
+      {
+        "name": "Java Script",
+        "picture": "https://i.ibb.co/HYtQPTW/pngegg-1.png",
+        "score": 95
+      },
+      {
+        "name": "React",
+        "picture": "https://i.ibb.co/c8t2WJK/react.png",
+        "score": 90
+      },
+      {
+        "name": "NodeJS",
+        "picture": "https://i.ibb.co/HYtQPTW/pngegg-1.png",
+        "score": 85
+      },
+      {
+        "name": "Material UI",
+        "picture": "Material UI.png",
+        "score": 85
+      },
+      {
+        "name": "Java Script",
+        "picture": "https://i.ibb.co/HYtQPTW/pngegg-1.png",
+        "score": 95
+      },
+      {
+        "name": "React",
+        "picture": "https://i.ibb.co/c8t2WJK/react.png",
+        "score": 90
+      },
+      {
+        "name": "NodeJS",
+        "picture": "https://i.ibb.co/HYtQPTW/pngegg-1.png",
+        "score": 85
+      },
+      {
+        "name": "Material UI",
+        "picture": "Material UI.png",
+        "score": 85
+      },
+      
+     
+    
+      {
+        "name": "Express",
+        "picture": "https://i.ibb.co/LhVHHLB/express.png",
+        "score": 80
+      },
+      
+      {
+        "name": "Next.js",
+        "picture": "nextjs.png",
+        "score": 90
+      }
+    ]
+  
+  
