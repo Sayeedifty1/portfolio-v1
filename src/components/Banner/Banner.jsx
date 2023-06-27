@@ -50,6 +50,7 @@ const Banner = () => {
                 <div className="w-6/12 text-center">
                     <h1 className="mb-5 text-5xl font-bold dark:text-yellow-300">Hi, It's Sayeed, <br /> {text}</h1>
                     {/* <h1 className="mb-5 text-2xl font-bold dark:text-yellow-300">Contact : +8801882021206 , md.abusayeedifty@gmail.com</h1> */}
+                    <button>Download <br /> Resume</button>
                 </div>
                 <Social></Social>
 
@@ -63,11 +64,11 @@ const Banner = () => {
                     </div>
                     <div className="absolute top-40 left-40 z-40 rounded-2xl w-60 bg-blue-50 dark:bg-gray-700 dark:text-yellow-500 pr-10 pl-4 py-4 flex gap-4 font-bold">
                         <BiPlus className="mt-1" />
-                        <span>Attention To-Detail</span>
+                        <span>Responsive design</span>
                     </div>
                     <div className="absolute top-60 left-40 z-40 rounded-2xl w-60 bg-blue-50 dark:bg-gray-700 dark:text-yellow-500 pr-10 pl-4 py-4 flex gap-4 font-bold">
                         <BiPlus className="mt-1" />
-                        <span>Attention To-Detail</span>
+                        <span>Team player</span>
                     </div>
                     <div className="absolute top-2 left-2 z-30 h-96 w-44 rounded-full border-8 border-white dark:border-black border-transparent"></div>
                 </div>

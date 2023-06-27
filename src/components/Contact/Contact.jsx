@@ -33,11 +33,11 @@ const Contact = () => {
     };
 
     return (
-        <div id="contact">
-            <div className="container mx-auto dark:bg-black dark:text-white p-10">
-                <h1 className="text-4xl font-bold text-center my-36">Contact Me</h1>
-                <div className="row">
-                    <div className="contactLeft mb-8">
+        <div id="contact" className='dark:bg-black '>
+            <div className="container mx-auto  p-10">
+                <h1 className="text-4xl font-bold text-center my-36 dark:text-yellow-500">Contact Me</h1>
+                <div className="row dark:text-white">
+                    <div className="contactLeft mb-8 dark:text-white">
                         {/* left icons */}
                         <p className='inline-flex'><HiMail className='text-2xl mr-2 hover:text-red-500'></HiMail> md.abusayeedifty@gmail.com</p>
                         <p className='mb-2 flex'><RiWhatsappFill className='hover:text-green-600 text-2xl mr-2'></RiWhatsappFill><span>(+880)1882021206</span></p>

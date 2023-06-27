@@ -22,7 +22,7 @@ const Navbar = () => {
         <Link to="/">About</Link>
       </li>
       <li>
-        <Link to="/">Skills</Link>
+        <a href="#skills">Skills</a>
       </li>
       <li>
         <Link to="/menu">Projects</Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar fixed z-50 bg-opacity-80 text-white bg-black dark:text-yellow-500 dark:opacity-60 dark:text-opacity-100">
+    <div className="navbar fixed z-50 bg-opacity-80 bg-slate-50 dark:bg-black dark:text-yellow-500 dark:opacity-60 dark:text-opacity-100">
       <div className="navbar-start">
         <div className="dropdown">
           <ul
