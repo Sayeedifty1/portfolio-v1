@@ -45,14 +45,14 @@ const Banner = () => {
 
 
     return (
-        <div className="dark:bg-black pb-10" id="main">
+        <div className="dark:bg-black font" id="main">
             <Container>
                 <div className="hero min-h-screen flex w-full " >
 
-                    <div className="w-6/12 text-center">
+                    <div className="w-6/12 ">
                         <h1 className="mb-5 text-5xl font-bold dark:text-yellow-300">Hi, It's Sayeed, <br /> {text}</h1>
                         {/* <h1 className="mb-5 text-2xl font-bold dark:text-yellow-300">Contact : +8801882021206 , md.abusayeedifty@gmail.com</h1> */}
-                        <button>Download <br /> Resume</button>
+                        <button className="button-87">Resume</button>
                     </div>
                     <Social></Social>
 

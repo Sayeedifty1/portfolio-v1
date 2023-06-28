@@ -193,7 +193,6 @@ position: relative;
   font-family: "EuroStyle Normal", sans-serif;
   font-size: 1.8rem;
   letter-spacing: 0.2em;
-  margin-block: 3rem;
 }
 .about__content p {
   font-weight: 400;
@@ -221,5 +220,9 @@ position: relative;
   font-family: "EuroStyle Normal", sans-serif;
   font-size: 3rem;
   letter-spacing: 0.2em;
-  margin-block: 3rem;
+}
+.font {
+  font-family: "EuroStyle Normal", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }

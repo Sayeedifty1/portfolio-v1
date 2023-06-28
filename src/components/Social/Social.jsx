@@ -1,7 +1,6 @@
 import {BsFacebook} from 'react-icons/bs';
 import {BsGithub} from 'react-icons/bs';
 import {ImLinkedin} from 'react-icons/im';
-
 import {MdContactMail} from 'react-icons/md';
 
 const Social = () => {

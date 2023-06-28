@@ -35,8 +35,7 @@ const Navbar = () => {
 
   const links = (
     <>
-      <li className="mr-4">Linkedin</li>
-      <li className="mr-4">GitHub</li>
+      
       <div
           className={`rounded-3xl flex items-center py-2 px-2  ${
             theme === "dark" ? "bg-white" : "bg-[#111]"
@@ -67,7 +66,7 @@ const Navbar = () => {
             {NavOptions}
           </ul>
         </div>
-        <a className="btn btn-ghost  text-xl">Sayeed</a>
+        <a className="btn btn-ghost font-serif normal-case text-xl">Sayeed</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{NavOptions}</ul>

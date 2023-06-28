@@ -34,10 +34,10 @@ const Contact = () => {
     };
 
     return (
-        <div id="contact" className='dark:bg-black '>
+        <div id="contact" className='dark:bg-black font'>
             <Container>
-                <div className="container mx-auto  p-10">
-                    <h1 className="heading text-center my-36 dark:text-yellow-500">Contact Me</h1>
+                <div className="container mx-auto p-10">
+                    <h1 className="heading text-center my-20 dark:text-yellow-500">Let's Connect</h1>
                     <div className="row dark:text-white">
                         <div className="contactLeft mb-8 dark:text-white">
                             {/* left icons */}
@@ -54,7 +54,7 @@ const Contact = () => {
                                 <input type="email" name="user_email" />
                                 <label>Message</label>
                                 <textarea name="message" />
-                                <input className="" type="submit" value="Send Message" />
+                                <input className="button-87" type="submit" value="Send Message" />
                             </form>
                         </div>
                     </div>

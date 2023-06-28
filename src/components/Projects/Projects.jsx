@@ -53,11 +53,11 @@ const Projects = () => {
   ];
 
   return (
-    <section className="projects" id="projects">
+    <section className="projects dark:bg-black" id="projects">
       <Container>
         <div className="projects__heading">
-          <h2>Featured Projects</h2>
-          <p>Here are a few projects I&#39;ve worked on.</p>
+          <h2 className="dark:text-yellow-500">Featured Projects</h2>
+          <p className="dark:text-white">Here are a few projects I&#39;ve worked on.</p>
         </div>
         <div className="projects__slider">
           <Swiper
