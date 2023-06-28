@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import {BsSun,BsMoonStars} from "react-icons/bs"
 const Navbar = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
 
@@ -9,9 +9,9 @@ const Navbar = () => {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-  const handleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
+  // const handleTheme = () => {
+  //   setTheme(theme === "dark" ? "light" : "dark");
+  // };
 
   const NavOptions = (
     <>
@@ -37,19 +37,27 @@ const Navbar = () => {
     <>
       <li className="mr-4">Linkedin</li>
       <li className="mr-4">GitHub</li>
-      <li>
-        <input
-          onClick={handleTheme}
-          type="checkbox"
-          className="toggle toggle-lg"
-          checked={theme === "dark"}
-        />
-      </li>
+      <div
+          className={`rounded-3xl flex items-center py-2 px-2  ${
+            theme === "dark" ? "bg-white" : "bg-[#111]"
+          }`}
+        >
+          <div
+            className={`${
+              theme === "light" ? "text-white" : "text-black"
+            }  cursor-pointer `}
+            
+       
+          >
+            {theme === "dark"?<BsSun   onClick={() => setTheme("light")}/>: <BsMoonStars onClick={() => setTheme("dark")} />}
+          </div>
+        
+        </div>
     </>
   );
 
   return (
-    <div className="navbar fixed z-50 bg-opacity-80 bg-slate-50 dark:bg-black dark:text-yellow-500 dark:opacity-60 dark:text-opacity-100">
+    <div className="navbar fixed z-50  bg-slate-50 dark:bg-black dark:text-yellow-500 ">
       <div className="navbar-start">
         <div className="dropdown">
           <ul
@@ -65,7 +73,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{NavOptions}</ul>
       </div>
       <div className="navbar-end p-2">
-        <ul className="menu menu-horizontal px-1 mr-4">{links}</ul>
+        <ul className="menu flex items-center flex-row px-1 mr-4">{links}</ul>
       </div>
     </div>
   );

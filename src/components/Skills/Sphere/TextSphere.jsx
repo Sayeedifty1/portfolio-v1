@@ -35,7 +35,6 @@ const TextShpere = () => {
         "MATERIAL UI",
         "BOOTSTRAP",
         "SURGE",
-
         "VSCODE",
         "CODEPEN",
         "STACKOVERFLOW",

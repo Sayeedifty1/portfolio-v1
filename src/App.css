@@ -11,3 +11,218 @@
 App-link{
     color: var(--link_color);
 }
+
+
+
+/* Projects  */
+
+.projects {
+  padding: 5rem 10rem;
+position: relative;
+}
+@media (max-width: 1600px) {
+  .projects {
+    padding: 5rem 2rem;
+  }
+}
+@media (max-width: 61.975rem) {
+  .projects {
+    padding: 5rem 2rem;
+  }
+}
+@media (max-width: 34.9375rem) {
+  .projects {
+    padding: 5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .projects__heading {
+    padding: 0rem;
+  }
+}
+.projects__heading h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+@media (max-width: 34.9375rem) {
+  .projects__heading h2 {
+    font-size: 2rem;
+  }
+}
+.projects__heading p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+@media (max-width: 61.975rem) {
+  .projects__heading p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 34.9375rem) {
+  .projects__heading p {
+    font-size: 0.9375rem;
+  }
+}
+.projects__slider {
+  margin-top: 5rem;
+}
+
+.projects__card {
+  width: 350px;
+  height: 500px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: minmax(100%, 1fr);
+  grid-template-areas: "stack";
+  overflow: hidden;
+  cursor: pointer;
+
+}
+@media (max-width:1200px){
+  .projects__card{
+    margin: 0 auto;
+  }
+}
+
+.projects__card-img, .projects__card-details {
+  grid-area: stack;
+}
+.projects__card-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.projects__card-details {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem 2rem;
+  transform: translateY(calc(100% - 5rem));
+  transition: transform 600ms;
+}
+.projects__card-details h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+.projects__card-details p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+.projects__card-details-btn {
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: 3px solid #6e07f3;
+  color: #fff;
+  border-radius: 15px;
+  font-size: 22px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+@media (max-width: 34.9375rem) {
+  .projects__card-details-btn {
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+  }
+}
+.projects__card-details-btn:hover {
+  background: #6e07f3;
+}
+.projects .projects__card:hover .projects__card-details {
+  transform: none;
+}
+/* About */
+.about {
+  background-color: #6e07f3;
+}
+.about__wrapper {
+  padding: 8rem 0 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about__heading {
+  text-align: center;
+}
+.about__heading h4 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+@media (max-width: 61.975rem) {
+  .about__heading h4 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 34.9375rem) {
+  .about__heading h4 {
+    font-size: 0.9375rem;
+  }
+}
+.about__heading h2 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+@media (max-width: 61.975rem) {
+  .about__heading h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 34.9375rem) {
+  .about__heading h2 {
+    font-size: 1.8rem;
+  }
+}
+.about__heading hr {
+  border: 2px solid #fff;
+  width: 100px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about__content {
+  text-align: center;
+}
+.about__content h3 {
+  font-family: "EuroStyle Normal", sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+  letter-spacing: 0.2em;
+  margin-block: 3rem;
+}
+.about__content p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 30px;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+@media (max-width: 61.975rem) {
+  .about__content p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 34.9375rem) {
+  .about__content p {
+    font-size: 0.9375rem;
+  }
+}
+@media (max-width: 61.975rem) {
+  .about__content p br {
+    display: none;
+  }
+}
