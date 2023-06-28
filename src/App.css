@@ -53,7 +53,6 @@ position: relative;
   }
 }
 .projects__heading p {
-  font-family: "Rubik", sans-serif;
   font-weight: 300;
   font-size: 1.4rem;
 }
@@ -72,8 +71,8 @@ position: relative;
 }
 
 .projects__card {
-  width: 350px;
-  height: 500px;
+  width: 300px;
+  height: 350px;
   border-radius: 15px;
   display: grid;
   grid-template-columns: minmax(100%, 1fr);
@@ -111,16 +110,15 @@ position: relative;
 .projects__card-details p {
   font-size: 16px;
   color: #fff;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .projects__card-details-btn {
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   background-color: transparent;
   border: 3px solid #6e07f3;
   color: #fff;
   border-radius: 15px;
   font-size: 22px;
-  font-family: "Rubik", sans-serif;
   font-weight: 500;
   letter-spacing: 0.01em;
 }
@@ -137,9 +135,7 @@ position: relative;
   transform: none;
 }
 /* About */
-.about {
-  background-color: #6e07f3;
-}
+
 .about__wrapper {
   padding: 8rem 0 15rem;
   display: flex;
@@ -151,13 +147,11 @@ position: relative;
   text-align: center;
 }
 .about__heading h4 {
-  font-family: "Rubik", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   font-size: 1.4rem;
   letter-spacing: 0.05em;
   margin-bottom: 0.5rem;
-  color: #fff;
 }
 @media (max-width: 61.975rem) {
   .about__heading h4 {
@@ -174,7 +168,6 @@ position: relative;
   margin-top: 1rem;
   margin-bottom: 1rem;
   letter-spacing: 0.05em;
-  color: #fff;
 }
 @media (max-width: 61.975rem) {
   .about__heading h2 {
@@ -187,7 +180,7 @@ position: relative;
   }
 }
 .about__heading hr {
-  border: 2px solid #fff;
+  border: 2px solid;
   width: 100px;
   position: relative;
   left: 50%;
@@ -199,16 +192,13 @@ position: relative;
 .about__content h3 {
   font-family: "EuroStyle Normal", sans-serif;
   font-size: 1.8rem;
-  color: #fff;
   letter-spacing: 0.2em;
   margin-block: 3rem;
 }
 .about__content p {
-  font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 30px;
-  color: #fff;
   letter-spacing: 0.05em;
 }
 @media (max-width: 61.975rem) {
@@ -225,4 +215,11 @@ position: relative;
   .about__content p br {
     display: none;
   }
+}
+
+.heading{
+  font-family: "EuroStyle Normal", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.2em;
+  margin-block: 3rem;
 }

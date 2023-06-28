@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import './Banner.css'
 import { BiPlus } from 'react-icons/bi';
 import Social from "../Social/Social";
+import Container from "../Container";
 
 const Banner = () => {
 
@@ -44,35 +45,37 @@ const Banner = () => {
 
 
     return (
-        <div className="dark:bg-black pb-10">
-            <div className="hero min-h-screen flex w-full " >
+        <div className="dark:bg-black pb-10" id="main">
+            <Container>
+                <div className="hero min-h-screen flex w-full " >
 
-                <div className="w-6/12 text-center">
-                    <h1 className="mb-5 text-5xl font-bold dark:text-yellow-300">Hi, It's Sayeed, <br /> {text}</h1>
-                    {/* <h1 className="mb-5 text-2xl font-bold dark:text-yellow-300">Contact : +8801882021206 , md.abusayeedifty@gmail.com</h1> */}
-                    <button>Download <br /> Resume</button>
-                </div>
-                <Social></Social>
+                    <div className="w-6/12 text-center">
+                        <h1 className="mb-5 text-5xl font-bold dark:text-yellow-300">Hi, It's Sayeed, <br /> {text}</h1>
+                        {/* <h1 className="mb-5 text-2xl font-bold dark:text-yellow-300">Contact : +8801882021206 , md.abusayeedifty@gmail.com</h1> */}
+                        <button>Download <br /> Resume</button>
+                    </div>
+                    <Social></Social>
 
-                <div className="h-80 w-44 rounded-full relative">
-                    <div className="absolute top-10 left-6 z-10 h-full w-full rounded-full overflow-hidden">
-                        <img className="w-full h-full object-cover" src="https://i.ibb.co/YN8H6Jd/IMG-1044.jpg" alt="" />
+                    <div className="h-80 w-44 rounded-full relative">
+                        <div className="absolute top-10 left-6 z-10 h-full w-full rounded-full overflow-hidden">
+                            <img className="w-full h-full object-cover" src="https://i.ibb.co/YN8H6Jd/IMG-1044.jpg" alt="" />
+                        </div>
+                        <div className="absolute top-20 left-40 z-40 rounded-2xl w-60 bg-blue-50 dark:bg-gray-700 dark:text-yellow-500 pr-10 pl-4 py-4 flex gap-4 font-bold">
+                            <BiPlus className="mt-1" />
+                            <span>Attention To-Detail</span>
+                        </div>
+                        <div className="absolute top-40 left-40 z-40 rounded-2xl w-60 bg-blue-50 dark:bg-gray-700 dark:text-yellow-500 pr-10 pl-4 py-4 flex gap-4 font-bold">
+                            <BiPlus className="mt-1" />
+                            <span>Responsive design</span>
+                        </div>
+                        <div className="absolute top-60 left-40 z-40 rounded-2xl w-60 bg-blue-50 dark:bg-gray-700 dark:text-yellow-500 pr-10 pl-4 py-4 flex gap-4 font-bold">
+                            <BiPlus className="mt-1" />
+                            <span>Team player</span>
+                        </div>
+                        <div className="absolute top-2 left-2 z-30 h-96 w-44 rounded-full border-8 border-white dark:border-black border-transparent"></div>
                     </div>
-                    <div className="absolute top-20 left-40 z-40 rounded-2xl w-60 bg-blue-50 dark:bg-gray-700 dark:text-yellow-500 pr-10 pl-4 py-4 flex gap-4 font-bold">
-                        <BiPlus className="mt-1" />
-                        <span>Attention To-Detail</span>
-                    </div>
-                    <div className="absolute top-40 left-40 z-40 rounded-2xl w-60 bg-blue-50 dark:bg-gray-700 dark:text-yellow-500 pr-10 pl-4 py-4 flex gap-4 font-bold">
-                        <BiPlus className="mt-1" />
-                        <span>Responsive design</span>
-                    </div>
-                    <div className="absolute top-60 left-40 z-40 rounded-2xl w-60 bg-blue-50 dark:bg-gray-700 dark:text-yellow-500 pr-10 pl-4 py-4 flex gap-4 font-bold">
-                        <BiPlus className="mt-1" />
-                        <span>Team player</span>
-                    </div>
-                    <div className="absolute top-2 left-2 z-30 h-96 w-44 rounded-full border-8 border-white dark:border-black border-transparent"></div>
                 </div>
-            </div>
+            </Container>
         </div>
     );
 };

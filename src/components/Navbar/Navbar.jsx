@@ -16,19 +16,19 @@ const Navbar = () => {
   const NavOptions = (
     <>
       <li>
-        <Link to="/">Home</Link>
+        <a href="#main">Home</a>
       </li>
       <li>
-        <Link to="/">About</Link>
+        <a href="#about">About</a>
       </li>
       <li>
         <a href="#skills">Skills</a>
       </li>
       <li>
-        <Link to="/menu">Projects</Link>
+        <a href="#projects">Projects</a>
       </li>
       <li>
-        <Link to="/order/salads">Contact</Link>
+        <a href="#contact">Contact</a>
       </li>
     </>
   );
@@ -67,7 +67,7 @@ const Navbar = () => {
             {NavOptions}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">Sayeed</a>
+        <a className="btn btn-ghost  text-xl">Sayeed</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{NavOptions}</ul>
