@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import {BsSun,BsMoonStars} from "react-icons/bs"
 const Navbar = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");

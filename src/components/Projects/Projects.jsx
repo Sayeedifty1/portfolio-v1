@@ -3,53 +3,56 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import projectImg1 from "../../assets/projectImg1.png"
 import projectImg2 from "../../assets/projectImg2.png"
 import projectImg3 from "../../assets/projectImg3.png"
+import projectImg4 from "../../assets/projectImg4.png"
+import projectImg5 from "../../assets/projectImg5.png"
 import "swiper/css"
 import "swiper/css/pagination";
 import { Autoplay } from "swiper";
 import Container from "../Container";
-
+import {AiFillEye, AiFillGithub} from "react-icons/ai"
 const Projects = () => {
   const Project = [
     {
       id: 1,
-      name: "Trading Website",
-      info: "Trade The Markets with Fast Direct Execution and Support in 30+ Languages at XM. Licensed and Regulated Broker, Multi Awarded Platforms Available On Any Device & 24/7 Help. Free trading signals.",
+      name: "Melody Master",
+      info: "A Full stack website with Admin, Instructor and user dashboard. Also use mongodb crud operation.Several packages are used, one of them is framer motion.",
       img: projectImg1,
-      link: "https://www.google.com",
+      link: "https://github.com/Sayeedifty1/Melody-Master-Client",
+      github: "https://github.com/Sayeedifty1/Melody-Master-Client"
     },
     {
       id: 2,
-      name: "Resturent Website",
-      info: `A great restaurant website supports all of your restaurant
-          marketing activities: it can attract new customers, maintain loyal
-          ones, and raise the overall profile of the establishment outside
-          of the physical location. It's a crucial aspect of running a
-          successful business.`,
+      name: "MCQueen Toys",
+      info: "A Full stack toy selling website with mongodb crud operation.Used react tabs to fetch data category wise.",
       img: projectImg2,
-      link: "https://www.google.com",
+      link: "https://toy-e-commerce.web.app",
+      github: "https://github.com/Sayeedifty1/McQueen-toys-client"
     },
     {
       id: 3,
-      name: "Ikea Clone Website",
-      info: "Trade The Markets with Fast Direct Execution and Support in 30+ Languages at XM. Licensed and Regulated Broker, Multi Awarded Platforms Available On Any Device & 24/7 Help. Free trading signals.",
+      name: "Next Page",
+      info: "React base book selling website. Used lottiefiles for animated svgs to make the site more attractive.",
       img: projectImg3,
-      link: "https://www.google.com",
+      link: "https://unadvised-giraffe.surge.sh",
+      github: "https://github.com/Sayeedifty1/next-page"
     },
     {
       id: 4,
-      name: "Ikea Clone Website",
-      info: "Trade The Markets with Fast Direct Execution and Support in 30+ Languages at XM. Licensed and Regulated Broker, Multi Awarded Platforms Available On Any Device & 24/7 Help. Free trading signals.",
-      img: projectImg2,
-      link: "https://www.google.com",
+      name: "AI Sumz",
+      info: "Article Summarizer with Chat GPT-4 API using React, Redux toolkit and Rapid api.",
+      img: projectImg4,
+      link: "https://649892b015317c37c5be25f0--bucolic-alpaca-17c710.netlify.app",
+      github: "https://github.com/Sayeedifty1/ai-summarizer"
     },
     {
       id: 5,
-      name: "Ikea Clone Website",
-      info: "Trade The Markets with Fast Direct Execution and Support in 30+ Languages at XM. Licensed and Regulated Broker, Multi Awarded Platforms Available On Any Device & 24/7 Help. Free trading signals.",
-      img: projectImg1,
-      link: "https://www.google.com",
+      name: "AI hub",
+      info: "This site is created Html CSS and JavaScript.Data is fetch from API call, and error handled using JavaScript conditions",
+      img: projectImg5,
+      link: "https://singular-fox-852611.netlify.app",
+      github: "https://github.com/Sayeedifty1/AI-universe-hub"
     },
-
+   
   ];
 
   return (
@@ -96,9 +99,14 @@ const Projects = () => {
                   <div className="projects__card-details">
                     <h3>{item.name}</h3>
                     <p>{item.info}</p>
+                    <div className="flex">
                     <a href={item.link} className="projects__card-details-btn">
-                      Visit Website
+                      <AiFillEye></AiFillEye>
                     </a>
+                    <a href={item.github} className="projects__card-details-btn">
+                       <AiFillGithub></AiFillGithub>
+                    </a>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>

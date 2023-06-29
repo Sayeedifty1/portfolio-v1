@@ -21,25 +21,25 @@
       },
       {
         "name": "NodeJS",
-        "picture": "https://i.ibb.co/HYtQPTW/pngegg-1.png",
+        "picture": "https://i.ibb.co/S5fxvC1/node-js.png",
         "score": 85
       },
       {
         "name": "Material UI",
-        "picture": "Material UI.png",
+        "picture": "https://i.ibb.co/2tLbY8T/pngwing-com.png",
         "score": 85
       },
       
       {
         "name": "Express",
-        "picture": "https://i.ibb.co/LhVHHLB/express.png",
+        "picture": "https://i.ibb.co/cwNtCMt/ex.png",
         "score": 80
       },
       
       {
         "name": "Next.js",
-        "picture": "nextjs.png",
-        "score": 90
+        "picture": "https://i.ibb.co/RyxpnXf/next.png",
+        "score": 60
       }
     ]
   

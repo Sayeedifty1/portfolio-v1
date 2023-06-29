@@ -39,7 +39,7 @@ const Contact = () => {
                 <div className="container mx-auto p-10">
                     <h1 className="heading text-center my-20 dark:text-yellow-500">Let's Connect</h1>
                     <div className="row dark:text-white">
-                        <div className="contactLeft mb-8 dark:text-white">
+                        <div className="contactLeft font mb-8 dark:text-white">
                             {/* left icons */}
                             <p className='inline-flex'><HiMail className='text-2xl mr-2 hover:text-red-500'></HiMail> md.abusayeedifty@gmail.com</p>
                             <p className='mb-2 flex'><RiWhatsappFill className='hover:text-green-600 text-2xl mr-2'></RiWhatsappFill><span>(+880)1882021206</span></p>

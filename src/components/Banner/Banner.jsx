@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-undef */
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import './Banner.css'
 import { BiPlus } from 'react-icons/bi';
 import Social from "../Social/Social";
@@ -8,55 +8,55 @@ import Container from "../Container";
 
 const Banner = () => {
 
-    const [loopNum, setLoopNum] = useState(0);
-    const [isDeleting, setIsDeleting] = useState(false);
-    const [text, setText] = useState("");
-    const [delta, setDelta] = useState(300 - Math.random() * 1000);
-    const toRotate = ["Web developer", "UI/UX Designer", "Full Stack Developer"];
-    const period = 2000;
+    // const [loopNum, setLoopNum] = useState(0);
+    // const [isDeleting, setIsDeleting] = useState(false);
+    // const [text, setText] = useState("");
+    // const [delta, setDelta] = useState(300 - Math.random() * 1000);
+    // const toRotate = ["Web developer", "UI/UX Designer", "Full Stack Developer"];
+    // const period = 2000;
 
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    const tick = () => {
-        let i = loopNum % toRotate.length;
-        let fullText = toRotate[i];
-        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-        setText(updatedText);
-        if (isDeleting) {
-            setDelta(prevDelta => prevDelta / 2);
-        }
-        if (!isDeleting && updatedText === fullText) {
-            setDelta(period);
-            setIsDeleting(true);
-        } else if (isDeleting && updatedText === "") {
-            setIsDeleting(false);
-            setLoopNum(loopNum + 1);
-            setDelta(500);
-        }
-    }
+    // const tick = () => {
+    //     let i = loopNum % toRotate.length;
+    //     let fullText = toRotate[i];
+    //     let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+    //     setText(updatedText);
+    //     if (isDeleting) {
+    //         setDelta(prevDelta => prevDelta / 2);
+    //     }
+    //     if (!isDeleting && updatedText === fullText) {
+    //         setDelta(period);
+    //         setIsDeleting(true);
+    //     } else if (isDeleting && updatedText === "") {
+    //         setIsDeleting(false);
+    //         setLoopNum(loopNum + 1);
+    //         setDelta(500);
+    //     }
+    // }
 
-    useEffect(() => {
-        let ticker = setInterval(() => {
-            tick();
-        }, delta)
-        return () => { clearInterval(ticker) }
-    }, [delta, text, tick])
+    // useEffect(() => {
+    //     let ticker = setInterval(() => {
+    //         tick();
+    //     }, delta)
+    //     return () => { clearInterval(ticker) }
+    // }, [delta, text, tick])
 
 
 
     return (
-        <div className="dark:bg-black font" id="main">
+        <div className="dark:bg-black " id="main">
             <Container>
-                <div className="hero min-h-screen flex w-full " >
+                <div className="hero min-h-screen flex flex-col md:flex-row w-full " >
 
-                    <div className="w-6/12 ">
-                        <h1 className="mb-5 text-5xl font-bold dark:text-yellow-300">Hi, It's Sayeed, <br /> {text}</h1>
+                    <div className="w-6/12 my-auto md:my-0">
+                        <h1 className="mb-5 text-4xl font dark:text-yellow-300">Hi, It's Sayeed, <br /> MERN Stack Developer.</h1>
                         {/* <h1 className="mb-5 text-2xl font-bold dark:text-yellow-300">Contact : +8801882021206 , md.abusayeedifty@gmail.com</h1> */}
                         <button className="button-87">Resume</button>
                     </div>
                     <Social></Social>
 
-                    <div className="h-80 w-44 rounded-full relative">
+                    <div className="hidden font md:block h-80 w-44 rounded-full relative">
                         <div className="absolute top-10 left-6 z-10 h-full w-full rounded-full overflow-hidden">
                             <img className="w-full h-full object-cover" src="https://i.ibb.co/YN8H6Jd/IMG-1044.jpg" alt="" />
                         </div>

@@ -3,16 +3,18 @@ import {BsFacebook} from 'react-icons/bs';
 import {BsGithub} from 'react-icons/bs';
 import {ImLinkedin} from 'react-icons/im';
 import {MdContactMail} from 'react-icons/md';
+import img from "../../assets/footer.png"
 const Footer = () => {
     return (
         <div className="dark:bg-black dark:text-white">
             <hr />
             <Container>
-                <footer className="flex justify-between p-10 ">
+                <footer className="flex justify-between py-4 gap-10 md:p-10 ">
                     <div>
-                        <h2 className="font-serif normal-case text-2xl dark:text-yellow-500">Sayeed</h2>
+                        {/* <h2 className="font-serif normal-case text-2xl dark:text-yellow-500">Sayeed</h2> */}
+                        <img className="w-20" src={img} alt="" />
                         <p className="pt-6 pb-2 text-xl">Md. Abu Sayeed Ifty</p>
-                        <p>MERN Stack Developer.</p>
+                        <p className="text-sm md:text-base">MERN Stack Developer.</p>
                     </div>
                     <div>
                         <span className="text-xl font-bold dark:text-yellow-500">Social</span>
@@ -25,7 +27,8 @@ const Footer = () => {
                     </div>
 
                 </footer>
-                <footer className="footer footer-center pb-4 ">
+                <hr />
+                <footer className="footer footer-center py-4 ">
                     <div>
                         <p>Copyright © 2023 - All right reserved by Md. Abu Sayeed</p>
                     </div>

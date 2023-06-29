@@ -115,7 +115,6 @@ position: relative;
 .projects__card-details-btn {
   padding: 1rem 1rem;
   background-color: transparent;
-  border: 3px solid #6e07f3;
   color: #fff;
   border-radius: 15px;
   font-size: 22px;
@@ -129,7 +128,7 @@ position: relative;
   }
 }
 .projects__card-details-btn:hover {
-  background: #6e07f3;
+  background: #07010f;
 }
 .projects .projects__card:hover .projects__card-details {
   transform: none;
