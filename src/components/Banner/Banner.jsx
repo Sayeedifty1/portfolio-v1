@@ -41,7 +41,9 @@ const Banner = () => {
     //     }, delta)
     //     return () => { clearInterval(ticker) }
     // }, [delta, text, tick])
-
+    const handleDownload = () =>{
+        window.open('/public/Resume phero.pdf', '_blank');
+    }
 
 
     return (
@@ -52,7 +54,7 @@ const Banner = () => {
                     <div className="w-6/12 my-auto md:my-0">
                         <h1 className="mb-5 text-4xl font dark:text-yellow-300">Hi, It's Sayeed, <br /> MERN Stack Developer.</h1>
                         {/* <h1 className="mb-5 text-2xl font-bold dark:text-yellow-300">Contact : +8801882021206 , md.abusayeedifty@gmail.com</h1> */}
-                        <button className="button-87">Resume</button>
+                        <button className="button-87" onClick={handleDownload}>Resume</button>
                     </div>
                     <Social></Social>
 
