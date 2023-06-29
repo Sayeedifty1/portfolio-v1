@@ -14,7 +14,7 @@ const About = () => {
           <div className="about__content">
             <h3>👋 Hi ! I am Sayeed Ifty.</h3>
             <p>
-              I'm a Frontend Developer with expertise of 3 years of professional
+              I'm a Frontend Developer with expertise of 1+ years of professional
               work experience.
               <br /> I Strive to create original, Highly Enhance Websites and
               impactful user experiences.

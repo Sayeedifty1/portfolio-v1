@@ -47,7 +47,7 @@ const Banner = () => {
 
 
     return (
-        <div className="dark:bg-black " id="main">
+        <div className="dark:bg-black" id="main">
             <Container>
                 <div className="hero min-h-screen flex flex-col md:flex-row w-full " >
 
