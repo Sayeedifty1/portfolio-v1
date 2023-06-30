@@ -42,7 +42,7 @@ const Banner = () => {
     //     return () => { clearInterval(ticker) }
     // }, [delta, text, tick])
     const handleDownload = () =>{
-        window.open('/public/Resume phero.pdf', '_blank');
+        window.open('Resume phero.pdf', '_blank');
     }
 
 
